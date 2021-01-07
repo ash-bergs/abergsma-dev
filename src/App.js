@@ -1,13 +1,18 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'; 
+
 import './App.css';
+
+import Hero from './components/Hero'; 
+import Nav from './components/Nav'; 
 
 function App() {
   
   return (
-    <main>
-      <p>This is just the beginning</p>
-    </main>
+    <Router>
+      <Nav />
+      <Route exact path="/" component={Hero} /> 
+    </Router>
   );
 }
 
