@@ -7,7 +7,12 @@ function Nav() {
     return(
         <nav>
             <Container>
-                <h2>Ashley Bergsma</h2>
+                <div className="wrapper flexBox">
+                    <h2 className="flexGrow_2">Ashley Bergsma</h2>
+                    <p className="navItem">About</p>
+                    <p className="navItem">Blog</p>
+                    <p className="navItem">Contact</p>
+                </div>
             </Container>
         </nav>
     );

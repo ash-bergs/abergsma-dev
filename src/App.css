@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+/* Wrapper class created to segment Container areas */
+
+.wrapper {
+  width: 100%;
+}
+
 
 /* Flexbox settings */
 
@@ -16,10 +22,25 @@
   flex-direction: column;
 }
 
+.flexGrow_2 {
+  flex-grow: 2;
+}
+
 nav {
+  color: white;
   width: 100%;
   padding: 10px 0;
   background: #353b80;
+}
+
+/* This navItem class can probably be moved to a layout file, abstract the font settings to typography */
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 0 2%; 
+  margin: 0 auto;
 }
 
 /* Classes defined in JSX: 
