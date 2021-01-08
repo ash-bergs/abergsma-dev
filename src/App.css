@@ -43,6 +43,19 @@ nav {
   margin: 0 auto;
 }
 
+
+/* Headline Component styles */
+
+.headlineBg {
+  background-image: url("./resources/images/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_star {
+  height: 90vh;
+}
+
 /* Classes defined in JSX: 
   - (div) headlineBg = headline background - holds background image, elements 
   - (div) flexBox = a div with display: flex always set 
