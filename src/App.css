@@ -1,4 +1,11 @@
 
+/* Global styles */
+
+p {
+  font-family: 'Lora', serif;
+}
+
+
 .container {
   width: 100%;
   max-width: 1060px;
@@ -26,14 +33,20 @@
   flex-grow: 2;
 }
 
+
+/* Nav styles */
 nav {
   color: white;
   width: 100%;
   padding: 10px 0;
-  background: #353b80;
+  background: #262625;
 }
 
 /* This navItem class can probably be moved to a layout file, abstract the font settings to typography */
+
+.navAnchor {
+  padding-left: 1%;
+}
 
 .navItem {
   display: flex;
@@ -52,12 +65,49 @@ nav {
   background-position: center;
 }
 
-.hero_star {
+.header {
   height: 90vh;
 }
 
-/* Classes defined in JSX: 
-  - (div) headlineBg = headline background - holds background image, elements 
-  - (div) flexBox = a div with display: flex always set 
-  - (div) column = class with flex-direction set to column 
+.innerContent {
+  align-self: center;
+  text-align: center;
+  width: 50vw;
+}
+
+
+/* Typography */
+
+/* typography dashboard */
+/** Classes 
+  title: title font settings - used for the title of different sections, and name in the header and nav bar
+  headline: Special class for the only h1 on the document - My name 
 */
+
+/** Fonts 
+  Josefin Sans - Headline and some titles 
+  Lora - main text, varying weights used for other titles 
+*/
+
+.headline {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7.5rem;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-stagger {
+  position: relative;
+  left: -20%;
+}
+
+.bottom-stagger {
+  display: block;
+  position: relative;
+  left: 11%;
+  margin-top: -1.5%;
+}
+
+
