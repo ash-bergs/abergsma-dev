@@ -36,9 +36,10 @@ bottom-stagger - last name
 }
 
 .bottom-stagger {
+    color: $color-yellow;
     position: relative;
-    left: 15%;
-    color: $color-yellow; 
+    top: -1.5rem;
+    left: 15%; 
 }
 
 // Navigation typography
