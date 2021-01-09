@@ -19,3 +19,17 @@ To get started with React, along with [Serverless Functions](https://vercel.com/
 ```shell
 $ npx create-react-app my-app
 ```
+
+
+## Welcome to my Portfolio's repo 
+
+I built this portfolio after bootstrapping through Vercel and Create-React-App 
+
+### Fonts: 
+
+- Josefina Sans - Large titles and headlines 
+- Lora - Regular (400), medium (500) - used for main text (400) and sub-section titles (500)
+
+### Style Sampler: 
+
+![Sampler](src\resources\images\style_sampler.png)
