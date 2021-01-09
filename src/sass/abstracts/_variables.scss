@@ -1,0 +1,29 @@
+/*
+* 🎨 Colors - limited set
+dark black - name color-black - not quite total black: #262625
+? yellow - #FABE1D
+? medium gray - #888682
+? light gray - #CBC5B7
+*/
+
+$color-black: #262625; 
+$medium-gray: #888682; 
+$light-gray: #CBC5B7; 
+$color-yellow: #FABE1D; 
+
+/* 
+* 🔠 Fonts: 
+
+Not sure on this one yet
+? Limited title - main headline, eye catcher, not used for subsections 
+? Josefin Sans 
+
+* limited-title
+* main-type  
+* title-weight 
+*/
+
+$limited-title: 'Josefin Sans', sans-serif;
+$main-type: 'Lora', serif;
+// Lora is the same type for the secondary titles, but the weight is increased. 
+$title-weight: 500; 
