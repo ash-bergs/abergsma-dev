@@ -10,8 +10,10 @@
 // ⚾ Base - the bones of the layout - major decisions that impact lots of elements 
 
 @import "base/base"; 
+@import "base/flex-box"; 
 @import "base/typography"; 
 
 // ⚓ Component specific styles 
 
+@import "component_styles/headline"; 
 @import "component_styles/nav"; 

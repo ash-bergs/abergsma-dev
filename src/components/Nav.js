@@ -10,7 +10,7 @@ function Nav() {
         <nav>
             <Container>
                 <div className="wrapper flexBox">
-                    <h2 className="flexGrow_2 title navAnchor">Ashley Bergsma</h2>
+                    <h2 className="headline navAnchor flexGrow_2">A. Bergsma</h2>
                     <p className="navItem link">About</p>
                     <p className="navItem link">Blog</p>
                     <p className="navItem link">Contact</p>

@@ -25,3 +25,9 @@ p {
 	font-family: $main-type;
 	letter-spacing: .8px;
 }
+
+//* header refers to the layout of the top of the page, a global, hardcoded setting
+.header {
+	height: 90vh; 
+	
+}

@@ -6,7 +6,8 @@ function Headline() {
         <section className="headlineBg">
             <div className="flexBox column header">
                 <div class="innerContent">
-                    <h1 class="title limited-title"><span class="top-stagger">Ashley</span> <span class="bottom-stagger">Bergsma</span></h1>
+                    <h1 class="headline limited-title name"><span class="top-stagger">Ashley</span></h1>
+                    <h1 class="headline limited-title name"><span class="bottom-stagger">Bergsma</span></h1>
                     <p className="paragraph">I'm a full stack developer</p>
                 </div>
             </div>
