@@ -1,0 +1,24 @@
+/*
+* Classes: 
+
+headline - display font title 
+title - title to a section - not a display title 
+
+paragraph - self explanatory 
+link - self explanatory 
+
+
+*/
+
+.headline {
+    font-family: $limited-title;
+    //letter-spacing: -1px;
+}
+
+.limited-title {
+    letter-spacing: -2.5px;
+    font-size: 3.5rem;
+}
+
+// Navigation typography
+// headline, navAnchor - the "logo" smaller display of my name 
