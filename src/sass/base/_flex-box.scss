@@ -1,0 +1,15 @@
+/*
+flexBox column flexGrow_2
+*/
+
+.flexBox {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flexGrow_2 {
+    flex-grow: 2;
+}

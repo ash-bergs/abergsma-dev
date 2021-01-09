@@ -1,0 +1,21 @@
+//* Styles in this file control the Headline component 
+
+/* 
+headlineBg - the div holding the entirety of the headline section
+innerContent - div holding my name and subtitle 
+*/
+
+.headlineBg {
+    background-image: url("../resources/images/header-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.innerContent {
+    height: 45vh;
+    width: 50vw;
+    align-self: center;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+}
