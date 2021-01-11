@@ -6,7 +6,7 @@ innerContent - div holding my name and subtitle
 */
 
 .headlineBg {
-    background-image: url("../resources/images/header-background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0)), url("../resources/images/header-background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -16,6 +16,14 @@ innerContent - div holding my name and subtitle
     width: 50vw;
     align-self: center;
     position: absolute;
-    top: 15%;
+    top: 20%;
     text-align: center;
+}
+
+.job-title {
+    color: $color-black;
+    font-family: $main-type;
+    font-size: 2.0rem;
+    font-weight: $title-weight;
+    letter-spacing: 1px;
 }
