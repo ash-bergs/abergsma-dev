@@ -1,6 +1,9 @@
 import React from 'react'; 
 
 
+import FlowerCard from './FlowerCard'; 
+
+
 function Headline() {
 
     return(
@@ -11,6 +14,7 @@ function Headline() {
                     <h1 className="headline limited-title name"><span className="bottom-stagger">Bergsma</span></h1>
                     <span className="job-title">Full Stack Engineer</span>
                 </div>
+                    <FlowerCard /> 
             </div>
         </section>
     );

@@ -6,6 +6,7 @@
 // 🧩 Abstracts - Variables & Mixins
 
 @import "abstracts/animations"; 
+@import "abstracts/mixins"; 
 @import "abstracts/variables"; 
 
 // ⚾ Base - the bones of the layout - major decisions that impact lots of elements 
@@ -16,6 +17,7 @@
 
 // ⚓ Component specific styles 
 
+@import "component_styles/flowerCard"; 
 @import "component_styles/headline"; 
 @import "component_styles/nav"; 
 @import "component_styles/typer"; 
