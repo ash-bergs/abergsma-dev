@@ -26,6 +26,10 @@ p {
 	letter-spacing: .8px;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 //* header refers to the layout of the top of the page, a global, hardcoded setting
 .header {
 	height: 90vh; 

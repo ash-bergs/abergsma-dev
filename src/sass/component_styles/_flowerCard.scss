@@ -1,0 +1,22 @@
+//* FlowerCard styles!! 
+
+
+
+.base, .top {
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 43%;
+    left: 55%;
+}
+
+.base {
+    background-image: url('../resources/images/flowerCard_base.svg');
+    background-size: cover;
+}
+
+.top {
+    background-image: url('../resources/images/flowerCard_top.svg');
+    background-size: cover;
+}
+
