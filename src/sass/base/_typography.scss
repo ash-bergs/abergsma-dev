@@ -42,5 +42,10 @@ bottom-stagger - last name
     left: 15%; 
 }
 
-// Navigation typography
-// headline, navAnchor - the "logo" smaller display of my name 
+
+//* Typer Component typography 
+
+.typer-text {
+    font-size: 2.5rem;
+    font-family: $main-type;
+}

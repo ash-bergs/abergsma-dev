@@ -1,0 +1,14 @@
+//* The rules in this partial control the blinking "cursor" on the typer component
+//* The one that makes it look like the words are being typed out on a word processor 
+
+#cursor {
+        border-left: .05em solid $color-black;
+        border-color: inherit;
+        animation: blink .9s steps(1) infinite;
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}

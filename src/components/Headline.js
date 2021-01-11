@@ -1,14 +1,15 @@
 import React from 'react'; 
 
+
 function Headline() {
 
     return(
         <section className="headlineBg">
             <div className="flexBox column header">
-                <div class="innerContent">
-                    <h1 class="headline limited-title name"><span class="top-stagger">Ashley</span></h1>
-                    <h1 class="headline limited-title name"><span class="bottom-stagger">Bergsma</span></h1>
-                    <p className="paragraph">I'm a full stack developer</p>
+                <div className="innerContent">
+                    <h1 className="headline limited-title name"><span className="top-stagger">Ashley</span></h1>
+                    <h1 className="headline limited-title name"><span className="bottom-stagger">Bergsma</span></h1>
+                    <span className="job-title">Full Stack Engineer</span>
                 </div>
             </div>
         </section>
@@ -17,7 +18,20 @@ function Headline() {
 
 export default Headline; 
 
-// removed title from h1 replace with headline
+//TODO - I decided not to use the Typer component in the headline, I think it will be too distracting from the point of this section
+// But where do I put it? 
 
-//? The <span> element appears to have reduced the letter spacing in the headline font? I didn't know that this happened? 
-//? is that specific to react? 
+/* 
+<Typer 
+                                head="I'm a "
+                                dataText={[
+                                    'creative', 
+                                    'frontend',
+                                    'curious',
+                                    'backend',
+                                    'React',
+                                    'full stack',
+                                ]} 
+                                tail=" developer"
+                            />
+*/
