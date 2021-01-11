@@ -1,17 +1,4 @@
-/*
-* Classes: 
-
-headline - display font title 
-title - title to a section - not a display title 
-
-paragraph - self explanatory 
-link - self explanatory 
-
-//* in Headline component 
-top-stagger - first name 
-bottom-stagger - last name 
-
-*/
+//* These styles impact size, weight, letter-spacing, etc of the fonts on the page! 
 
 .headline {
     font-family: $limited-title;
@@ -24,7 +11,8 @@ bottom-stagger - last name
 }
 
 
-//* name, top-stagger and bottom-stagger all control the headline name styles
+//* name, top-stagger and bottom-stagger control name in Headline component
+
 .name {
     font-size: 9.0rem;
     letter-spacing: -10px;
@@ -43,7 +31,7 @@ bottom-stagger - last name
 }
 
 
-//* Typer Component typography 
+//* Typer component typography 
 
 .typer-text {
     font-size: 2.5rem;
