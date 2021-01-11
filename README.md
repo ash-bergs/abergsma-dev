@@ -1,35 +1,24 @@
-![React Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/react.svg)
+## Welcome to my portfolio! 
 
-# React Example
+This project was bootstrapped through Create-React-App and Vercel. 
 
-This directory is a brief example of a [React](https://reactjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
+### Packages/Libraries 
 
-## Deploy Your Own
+- React-router-dom
+- Sass 
+- React Spring 
 
-Deploy your own React project, along with Serverless Functions, with Vercel.
+### Hierarchy 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/create-react-app-functions)
+(include figma grab here)
 
-_Live Example: https://create-react-app.now-examples.now.sh/_
+### Style Samplers 
 
-### How We Created This Example
+(include figma grabs here)
 
-To get started with React, along with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction), with Vercel, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
-
-```shell
-$ npx create-react-app my-app
-```
+Typefaces: 
+- Josefin Sans 
+- Lora, 400 & 500 weight
 
 
-## Welcome to my Portfolio's repo 
-
-I built this portfolio after bootstrapping through Vercel and Create-React-App 
-
-### Fonts: 
-
-- Josefina Sans - Large titles and headlines 
-- Lora - Regular (400), medium (500) - used for main text (400) and sub-section titles (500)
-
-### Style Sampler: 
-
-![Sampler](src\resources\images\style_sampler.png)
+----
