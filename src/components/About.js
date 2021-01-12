@@ -11,7 +11,7 @@ function About() {
                     <p>Though I'm proficient with the MERN stack, learning a new language or library is a welcome challenge. Currently I'm learning about NextJs and Lottie. My journey to master React and JavaScript while learning new patterns and skills can be followed on my <a href="https://dev.to/ash_bergs">blog</a></p>
                 </div>
                 <div className="col-1-of-2">
-                    <p>Image carousel goes here 🎠</p>
+                    <p>Image carousel will go here 🎠</p>
                 </div>
             </div>
         </div>
