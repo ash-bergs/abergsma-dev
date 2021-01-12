@@ -1,0 +1,8 @@
+.u-center-content {
+    //* note: not sure on adding a hard height here... we'll see after we add the carousel
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
