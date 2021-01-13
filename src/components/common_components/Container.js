@@ -1,9 +1,9 @@
 import React from 'react'; 
 
-function Container({ children }) {
+function Container({ className, children }) {
 
     return(
-        <div className="Container"> {children} </div>
+        <div className={`Container ${className}`}> {children} </div>
     ); 
 }
 

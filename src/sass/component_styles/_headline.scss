@@ -9,6 +9,9 @@ innerContent - div holding my name and subtitle
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0)), url("../resources/images/header-background.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .innerContent {

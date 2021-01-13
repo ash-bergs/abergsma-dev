@@ -21,9 +21,16 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+//TODO Implement this setting, fix current sizes before saving
+// html {
+//     // This defines what 1rem is
+//     font-size: 62.5%;
+// }
+
 p {
 	font-family: $main-type;
 	letter-spacing: .8px;
+	line-height: 23px;
 }
 
 body {
@@ -34,4 +41,19 @@ body {
 .header {
 	height: 90vh; 
 	
+}
+
+/* Container control panel */ 
+
+.Container {
+	width: 100%;
+}
+
+.about {
+	height: 55vh;
+	padding: 10% 0;
+	//* move the margin top UP to cover gap
+	margin-top: -15vh;
+	background-color: $color-black;
+	color: white;
 }

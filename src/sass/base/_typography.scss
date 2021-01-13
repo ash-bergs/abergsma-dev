@@ -11,9 +11,13 @@
 }
 
 .section-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
+    margin-bottom: 2%;
 }
 
+.highlighted {
+    color: $color-yellow;
+}
 
 //* name, top-stagger and bottom-stagger control name in Headline component
 
