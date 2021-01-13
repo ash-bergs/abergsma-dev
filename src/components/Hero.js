@@ -10,7 +10,7 @@ function Hero() {
         <section className="hero">
                 {/* a box featuring my name and a sunflower animation will go here */}
             <Headline />
-            <Container>
+            <Container className="about">
                 <About /> 
             </Container>
         </section>

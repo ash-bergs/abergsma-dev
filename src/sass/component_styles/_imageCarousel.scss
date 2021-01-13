@@ -1,0 +1,39 @@
+.composition {
+    position: relative; 
+
+    &-photo {
+        width: 50%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 4px;
+        position: absolute;
+        /* z-index is arbitrary - just used to make sure the hovered element is on top*/
+        z-index: 10;
+        transition: all .2s;
+        /* border outline empty space */
+        outline-offset: 1.0rem;
+
+        &--p1 {
+            left: 0;
+            top: -2rem;
+        }
+        &--p2 {
+            right: 0;
+            top: 2.0rem;
+        }
+        &--p3 {
+            left: 20%;
+            top: 10rem;
+        }
+
+        &:hover {
+            //outline: .5rem solid $candy-corn;
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+    /* makes the photos not currently hovered during a hover event smaller than the one that is */
+    &:hover &_photo:not(:hover) {
+        transform: scale(.85);
+    }
+}
