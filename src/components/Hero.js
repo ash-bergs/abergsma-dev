@@ -3,6 +3,7 @@ import React from 'react';
 import About from './About'; 
 import Container from './common_components/Container'; 
 import Headline from './Headline'; 
+import Skills from './Skills'; 
 
 function Hero() {
 
@@ -12,6 +13,7 @@ function Hero() {
             <Headline />
             <Container className="about">
                 <About /> 
+                <Skills />
             </Container>
         </section>
     );
