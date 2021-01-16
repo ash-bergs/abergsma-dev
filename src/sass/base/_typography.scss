@@ -1,30 +1,32 @@
 //* These styles impact size, weight, letter-spacing, etc of the fonts on the page! 
 
-.headline {
-    font-family: $limited-title;
-    //letter-spacing: -1px;
+// Nav typography
+
+.navItem {
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    color: white;
 }
 
-.limited-title {
-    letter-spacing: -2.5px;
-    font-size: 3.5rem;
-}
-
-.section-subtitle {
-    font-size: 2.8rem;
-    margin-bottom: 2%;
-}
-
-.highlighted {
+.navItem:hover {
     color: $color-yellow;
 }
 
-//* name, top-stagger and bottom-stagger control name in Headline component
-
-.name {
-    font-size: 9.0rem;
-    letter-spacing: -10px;
+.link {
+    text-decoration: none;
 }
+
+.navAnchor {
+    font-size: 3.0rem;
+    color: $color-yellow;
+}
+
+.navAccent {
+    color: white;
+}
+
+// Headline typography
+//* name, top-stagger and bottom-stagger control name in Headline component
 
 .top-stagger {
     position: relative;
@@ -35,9 +37,28 @@
     color: $color-yellow;
     position: relative;
     top: -1.5rem;
-    left: 15%; 
+    left: 13%; 
 }
 
+.headline {
+    font-family: $limited-title;
+    letter-spacing: -1px;
+}
+
+.limited-title {
+    //letter-spacing: -2.5px;
+    letter-spacing: -1.0rem;
+    font-size: 13.5rem;
+}
+
+.section-subtitle {
+    font-size: 2.8rem;
+    margin-bottom: 2%;
+}
+
+.highlighted {
+    color: $color-yellow;
+}
 
 //* Typer component typography 
 

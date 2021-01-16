@@ -1,10 +1,12 @@
 //* Styles here affect elements in the Nav component
 
 nav {
-    color: white;
     width: 100%;
     padding: 10px 0;
     background: $color-black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
  
