@@ -2,21 +2,22 @@ const skillCardsData = [
     {
         "title": "Languages", 
         "featuredSkills": ["JavaScript", "HTML5", "Python", "CSS"], 
-        "className": "composition-photo composition-photo--p1"
+        "icon": "fas fa-language"
     }, 
     {
         "title": "Libraries", 
         "featuredSkills": ["React", "amCharts", "Styled Components", "UI Kit"], 
-        "className": "composition-photo composition-photo--p2"
+        "icon": "fas fa-book"
     }, 
     {
         "title": "Frameworks",
         "featuredSkills": ["Express", "Next", "Jest", "Enzyme"], 
-        "className": "composition-photo composition-photo--p3"
+        "icon": "fas fa-box-open"
     }, 
     {
         "title": "Learning", 
-        "featuredSkills": ["LottieFiles", "React Native", "MongooBD"]
+        "featuredSkills": ["LottieFiles", "React Native", "MongooBD"], 
+        "icon": "fas fa-brain"
     }
 ]; 
 
