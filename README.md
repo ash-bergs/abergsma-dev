@@ -1,4 +1,4 @@
-## Welcome to my portfolio! 
+## Personal Profile of Ashley Bergsma 
 
 This project was bootstrapped through Create-React-App and Vercel. I've built the app using React, and styled it using Sass. 
 
@@ -8,6 +8,7 @@ The current deployed page lives [here](https://abergsma-dev.vercel.app/)
 
 - React-router-dom
 - React Spring 
+- Sass 
 
 Style is given to the page using Sass, files are organized with 7-1 CSS architecture in mind
 
@@ -20,8 +21,9 @@ Style is given to the page using Sass, files are organized with 7-1 CSS architec
 (include figma grabs here)
 
 Typefaces: 
-- Josefin Sans 
+- Josefin Sans for titles and headlines 
 //TODO - I need to pick a better body font, I don't know why I picked a serif font to begin with 🤦‍♀️
+- Lato (reg) for the rest
 
 
 ----
