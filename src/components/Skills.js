@@ -8,7 +8,7 @@ import SkillCard from './SkillCard';
 function Skills(props) {
 
     return (
-        <div className="skillsBox flexBox">
+        <div className="space-around flexBox">
             {/* mapping over skillCardsData here, to render a SkilLCard for each object in the array passed as "card" */}
             {skillCardsData.map((card, index) => (
                 <SkillCard card={card} key={index} />

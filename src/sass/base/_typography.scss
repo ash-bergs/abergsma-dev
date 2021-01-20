@@ -3,9 +3,10 @@
 // Nav typography
 
 .navItem {
+    color: white;
     font-size: 2.4rem;
     font-family: $main-type;
-    color: white;
+    transition: all 1s;
 }
 
 .navItem:hover {
@@ -17,12 +18,18 @@
 }
 
 .navAnchor {
-    font-size: 3.0rem;
+    display: flex;
+    font-size: 3.2rem;
     color: $color-yellow;
+    font-family: $limited-title;
+    letter-spacing: -1.5px;
+    //align-items: center;
+    //align-content: center;
+    //justify-content: center;
 }
 
 .navAccent {
-    color: white;
+    color: $color-yellow;
 }
 
 // Headline typography
