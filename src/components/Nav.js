@@ -11,7 +11,7 @@ function Nav() {
         <nav>
             <Container>
                 <div className="flexBox">
-                    <h2 className="headline navAnchor flexGrow_2">A<span className="navAccent">.</span> Bergsma</h2>
+                    <h2 className="navAnchor flexGrow_2">A<span className="navAccent">.</span> Berg</h2>
                     <Link to="/" className="navItem link">Home</Link>
                     <Link to="/contact" className="navItem link">Contact</Link>
                     <a href="https://dev.to/ash_bergs" className="navItem link">Blog</a>
