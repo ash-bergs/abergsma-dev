@@ -1,5 +1,3 @@
-//TODO Remove title class from the nav anchor - this will be the display font and should be a "headline" class item 
-
 import React from 'react'; 
 import { Link } from 'react-router-dom'; 
 
@@ -22,5 +20,3 @@ function Nav() {
 }
 
 export default Nav; 
-
-// These p elements should be Links (react-router-dom), make a logo component? 

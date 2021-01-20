@@ -7,6 +7,10 @@
     font-size: 2.4rem;
     font-family: $main-type;
     transition: all 1s;
+
+    @include respond(phone) {
+        color: $color-black; 
+    }
 }
 
 .navItem:hover {
@@ -18,14 +22,10 @@
 }
 
 .navAnchor {
-    display: flex;
     font-size: 3.2rem;
     color: $color-yellow;
     font-family: $limited-title;
     letter-spacing: -1.5px;
-    //align-items: center;
-    //align-content: center;
-    //justify-content: center;
 }
 
 .navAccent {
@@ -38,6 +38,10 @@
 .top-stagger {
     position: relative;
     left: -17%;
+
+    @include respond(phone) {
+        left: 0;
+    }
 }
 
 .bottom-stagger {
@@ -45,6 +49,11 @@
     position: relative;
     top: -1.5rem;
     left: 13%; 
+
+    @include respond(phone) {
+        left: 0; 
+        color: black;
+    }
 }
 
 .headline {
@@ -56,6 +65,10 @@
 .limited-title {
     letter-spacing: -1.0rem;
     font-size: 13.5rem;
+
+    @include respond(phone){
+        font-size: 10.0rem;
+    }
 }
 
 .section-subtitle {
