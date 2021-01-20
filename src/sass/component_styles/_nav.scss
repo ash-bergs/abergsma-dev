@@ -1,19 +1,22 @@
 //* Styles here affect elements in the Nav component
 
 nav {
-    width: 100%;
-    padding: .10%;
-    background: $color-black;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  width: 100%;
+  padding: .10%;
+  background: $color-black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  @include respond(phone) {
+    background-color: $color-yellow;
+  }
 }
 
- 
 .navAnchor {
+  display: flex;
   padding-left: 1%;
 }
-
 
 .navItem {
   padding: 0 2%; 
