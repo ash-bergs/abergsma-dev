@@ -18,3 +18,8 @@ function Skills(props) {
 }
 
 export default Skills; 
+
+// As of right now, at desktop style, the skills section is laid out w/ flexbox
+// display: flex; defaults to row, which is what we want at this size 
+//TODO but for mobile sizing we want to make flex-direction = column 
+

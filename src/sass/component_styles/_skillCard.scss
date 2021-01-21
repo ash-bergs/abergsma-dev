@@ -4,7 +4,7 @@
     width: 25rem;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
     background-color: $color-yellow;
     transition: transform .3s;
 
@@ -13,10 +13,12 @@
     }
 }
 
+//TODO this class should be in TYPOGRAPHY 
 .fas {
     font-size: 6.0rem;
 }
 
+//TODO this <ul> element styling should also be in typography 
 .skill-list {
     list-style: none;
     font-size: 1.8rem;
