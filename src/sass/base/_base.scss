@@ -42,6 +42,9 @@ body {
 .header {
 	height: 90vh; 
 	
+	@include respond(phone){
+		height: 50vh;
+	}
 }
 
 /* Container control panel */ 
@@ -51,9 +54,8 @@ body {
 }
 
 .about {
-	height: 55vh;
 	padding: 10% 0;
-	//* move the margin top UP to cover gap
+	// move the margin top UP to cover gap 👇
 	margin-top: -15vh;
 	background-color: $color-black;
 	color: white;

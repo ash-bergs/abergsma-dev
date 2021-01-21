@@ -15,3 +15,6 @@ function SkillCard({ card }) {
 }
 
 export default SkillCard; 
+
+//TODO The icons need to be styled - maybe a gradient? 
+//TODO Also the font of the <li> elements needs to be bolder, and spaced for easier reading 
