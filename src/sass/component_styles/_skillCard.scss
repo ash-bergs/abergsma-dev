@@ -13,12 +13,40 @@
     }
 }
 
-//TODO this class should be in TYPOGRAPHY 
 .fas {
+    margin-bottom: 2%;
     font-size: 6.0rem;
+    //* all of the rules below need each other to work properly
+    // without -webkit-background-clip the gradient is applied to the background, not the icon
+    background-image: linear-gradient(to top, black, $color-black);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &.fa-language {
+        font-size: 7.0rem;
+        margin-bottom: -1%;
+    }
 }
 
-//TODO this <ul> element styling should also be in typography 
+
+//!  "this <ul> element styling should also be in typography" - this is not the most efficient! How couldn't I see this sooner!? 
+//! It has ocurred to me that I've been thinking about the typography partial all wrong 🤦‍♀️ I'll have to fix this, but I'm not going to let it derail me now 
+
+
+.section-subtitle {
+    font-size: 3.3rem;
+    margin-bottom: 2%;
+}
+
+// Adds border beneath subtitle 
+.section-subtitle:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 45%; 
+    border-bottom: 1px solid $color-black;
+}
+
 .skill-list {
     list-style: none;
     font-size: 1.8rem;
