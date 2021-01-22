@@ -1,12 +1,9 @@
 //* FlowerCard styles!! 
-
-
-
 .base, .top {
     height: 60vh;
     width: 50vw;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 55%;
 
     @include respond(phone) {
