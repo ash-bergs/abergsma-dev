@@ -80,6 +80,14 @@
     color: $color-yellow;
 }
 
+.about-text {
+    font-family: $main-type;
+	font-size: 1.6rem;
+	letter-spacing: .8px;
+    line-height: 25px;
+    padding-bottom: .5%;
+}
+
 //* Typer component typography 
 
 .typer-text {
