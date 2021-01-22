@@ -22,7 +22,6 @@ Style is given to the page using Sass, files are organized with 7-1 CSS architec
 
 Typefaces: 
 - Josefin Sans for titles and headlines 
-//TODO - I need to pick a better body font, I don't know why I picked a serif font to begin with 🤦‍♀️
 - Lato (reg) for the rest
 
 
