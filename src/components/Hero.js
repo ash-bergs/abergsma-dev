@@ -5,6 +5,7 @@ import Container from './common_components/Container';
 import Headline from './Headline'; 
 import Skills from './Skills'; 
 
+
 function Hero() {
 
     return( 
