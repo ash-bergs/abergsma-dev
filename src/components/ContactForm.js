@@ -33,7 +33,7 @@ function ContactForm(){
 
 
     return(
-        <Container style={{ backgroundColor: 'yellow'}}>
+        <Container>
             <div className="flexBox column contact">
 
                 { status === "ERROR" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Something went wrong. Sorry about that! You can reach out to me directly <a href="mailto:ashley.bergsma42@gmail.com">here</a></p> 

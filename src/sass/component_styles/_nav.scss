@@ -13,12 +13,41 @@ nav {
   }
 }
 
-.navAnchor {
-  display: flex;
-  padding-left: 1%;
-}
-
 .navItem {
   padding: 0 2%; 
   margin: 0 auto;
 } 
+
+.navItem:hover {
+  color: $color-yellow;
+}
+// Nav typography
+
+.navItem {
+  color: white;
+  font-size: 2.4rem;
+  font-family: $main-type;
+  transition: all 1s;
+
+  @include respond(phone) {
+      color: $color-black; 
+  }
+}
+
+.navAnchor {
+  display: flex;
+}
+
+.navTitle {
+  font-size: 3.2rem;
+  color: $color-yellow; 
+  font-family: $limited-title;
+  letter-spacing: -2.0px;
+  position: relative;
+  left: 12%;
+  padding-top: 2%;
+}
+
+.navTitle-link {
+  text-decoration-color: $color-yellow;
+}

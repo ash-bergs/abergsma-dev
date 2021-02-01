@@ -9,7 +9,9 @@ const Nav= () => {
         <nav>
             <Container>
                 <div className="flexBox">
-                    <h2 className="navAnchor flexGrow_2">A<span className="navAccent">.</span> Berg</h2>
+                    <div className="flexGrow_2 navAnchor">
+                        <Link to={'/'} className="navTitle-link"><h2 className="navTitle">A.Berg</h2></Link>
+                    </div>
                     <Link to={`/`} className="navItem link">Home</Link>
                     <Link to={`/contact`} className="navItem link">Contact</Link>
                     <a href="https://dev.to/ash_bergs" className="navItem link">Blog</a>

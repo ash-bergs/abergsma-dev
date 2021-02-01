@@ -1,37 +1,10 @@
-//* These styles impact size, weight, letter-spacing, etc of the fonts on the page! 
+//* GLOBAL text/font-face/type settings go here. Things like links as they display across all parts of the page 
+//! Remember, consistency and bad design is better than good design and no consistency 
 
-// Nav typography
-
-.navItem {
-    color: white;
-    font-size: 2.4rem;
-    font-family: $main-type;
-    transition: all 1s;
-
-    @include respond(phone) {
-        color: $color-black; 
-    }
-}
-
-.navItem:hover {
-    color: $color-yellow;
-}
 
 .link {
     text-decoration: none;
-}
-
-.navAnchor {
-    font-size: 3.2rem;
-    color: $color-yellow;
-    font-family: $limited-title;
-    letter-spacing: -1.5px;
-}
-
-.navAccent {
-    color: $color-yellow;
-}
-
+  }
 // Headline typography
 //* name, top-stagger and bottom-stagger control name in Headline component
 
