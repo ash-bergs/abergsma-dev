@@ -1,15 +1,23 @@
 .skill-card {
     color: $color-black;
-    padding: 2.5rem;
+    padding: 2.0rem;
     width: 25rem;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(black, .15);
     background-color: $color-yellow;
-    transition: transform .3s;
+    transition: all .3s;
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.05);
+
+        .card-title {
+            font-size: 4.0rem;
+        }
+
+        .skill-list {
+            font-weight: bold;
+        }
     }
 }
 
@@ -18,7 +26,7 @@
     font-size: 6.0rem;
     //* all of the rules below need each other to work properly
     // without -webkit-background-clip the gradient is applied to the background, not the icon
-    background-image: linear-gradient(to top, black, $color-black);
+    background-image: linear-gradient(to bottom, $color-black, black);
     -webkit-background-clip: text;
     color: transparent;
 
@@ -32,23 +40,26 @@
 //!  "this <ul> element styling should also be in typography" - this is not the most efficient! How couldn't I see this sooner!? 
 //! It has ocurred to me that I've been thinking about the typography partial all wrong 🤦‍♀️ I'll have to fix this, but I'm not going to let it derail me now 
 
+//* The 'headline' class is also used with the subtitle here - this global class just dictates SIZE and LETTER SPACING. 
+// All other specific to the skill card font styles are here. 
 
-.section-subtitle {
-    font-size: 3.3rem;
+.card-title {
+    font-size: 3.8rem;
     margin-bottom: 2%;
+    transition: all .3s;
 }
-
 // Adds border beneath subtitle 
-.section-subtitle:after {
+.card-title:after {
     content: ""; 
     display: block; 
     margin: 0 auto; 
     width: 45%; 
-    border-bottom: 1px solid $color-black;
+    border-bottom: 3px solid $color-black;
 }
 
 .skill-list {
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: $main-type;
+    transition: all .2s;
 }
