@@ -16,7 +16,7 @@ class Typer extends React.Component {
             text: '', 
             isDeleting: false, 
             loopCount: 0, 
-            typingSpeed: 200
+            typingSpeed: 250
         }
     }
 
@@ -33,7 +33,7 @@ class Typer extends React.Component {
         //* set the state 
         this.setState({
             text: isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1), 
-            typingSpeed: isDeleting ? 90 : 150
+            typingSpeed: isDeleting ? 150 : 250
         }); 
 
         if (!isDeleting && text === fullText) {

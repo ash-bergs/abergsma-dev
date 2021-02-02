@@ -21,3 +21,18 @@
         }
     }
 }
+
+// Need : 2 by 2 grid classes 
+/*
+$grid-width: 150rem; 
+$gutter-vertical: 5rem; 
+$gutter-horizontal: 5rem; 
+*/
+
+.four-square-system {
+    display: grid; 
+    grid-template-columns: 48% 48%;
+    grid-row: auto auto; 
+    //column-gap: $gutter-horizontal;
+    row-gap: $gutter-horizontal;
+}

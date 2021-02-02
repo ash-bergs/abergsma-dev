@@ -1,7 +1,7 @@
 const skillCardsData = [
     {
         "title": "Languages", 
-        "featuredSkills": ["JavaScript", "HTML5", "Python", "CSS"], 
+        "featuredSkills": ["JavaScript", "HTML5", "CSS", "Python"], 
         "icon": "fas fa-language"
     }, 
     {
@@ -16,7 +16,7 @@ const skillCardsData = [
     }, 
     {
         "title": "Learning", 
-        "featuredSkills": ["LottieFiles", "React Native", "MongooBD"], 
+        "featuredSkills": ["LottieFiles", "React Native", "Material UI", ""], 
         "icon": "fas fa-brain"
     }
 ]; 

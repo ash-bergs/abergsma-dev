@@ -20,21 +20,3 @@ function Headline() {
 }
 
 export default Headline; 
-
-//TODO - I decided not to use the Typer component in the headline, I think it will be too distracting from the point of this section
-// But where do I put it? 
-
-/* 
-<Typer 
-                                head="I'm a "
-                                dataText={[
-                                    'creative', 
-                                    'frontend',
-                                    'curious',
-                                    'backend',
-                                    'React',
-                                    'full stack',
-                                ]} 
-                                tail=" developer"
-                            />
-*/
