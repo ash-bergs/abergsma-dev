@@ -51,7 +51,7 @@ class Typer extends React.Component {
     
     render() {
         return (
-            <h3 className="typer-text">{this.props.head} 
+            <h3 className="section-subtitle headline">{this.props.head} 
                 <span className="animated-text">{this.state.text}</span>
                 <span id="cursor"></span>
                 {this.props.tail}
