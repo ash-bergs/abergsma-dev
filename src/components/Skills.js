@@ -12,26 +12,30 @@ function Skills(props) {
         <div className="main-grid-system">
             <div className="row">
                 <div className="col-1-of-2">
-                    <div className="four-square-system">
+                    <div className="four-square-system u-center-content">
                         {/* mapping over skillCardsData here, to render a SkilLCard for each object in the array passed as "card" */}
                         {skillCardsData.map((card, index) => (
                             <SkillCard card={card} key={index} />
                         ))}
                     </div>
                 </div>
-                <div className="col-1-of-2">
-                    <Typer 
-                    head="I can "
-                    dataText={[
-                        'imagine', 
-                        'code',
-                        'learn',
-                        'explore',
-                        'teach',
-                    ]} 
-                    tail=" anything"
-                />
-                    <p className="small-text">As a developer, the journey to learn is never over</p>
+                <div className="col-1-of-2 u-center-content u-increase-height">
+                    <div className="u-center-text">
+                        <Typer 
+                        head="I can "
+                        dataText={[
+                            'imagine', 
+                            'code',
+                            'learn',
+                            'build',
+                            'explore',
+                            'teach',
+                        ]} 
+                        tail=" anything"
+                        />
+                    </div>
+                    <p className="small-text">As a developer, our journey to learn is never over. While I'm most proficient with JavaScript, React and the MERN stack, I never shy from the challenge of learning new languages, patterns and libraries. I'm experienced with working on remote teams, adapting to sudden project changes and learning on the go.</p>
+                    <p className="small-text"> I know that meaningful things are built on teams - and the best teams have a game plan. My Agile training has given me the skills to foster a team-minded approach to problem solving, while valuing the contributions of the individual.</p>
                 </div>
             </div>
         </div>
@@ -44,4 +48,4 @@ export default Skills;
 // display: flex; defaults to row, which is what we want at this size 
 //TODO but for mobile sizing we want to make flex-direction = column 
 // IDEA - this component is also going to use the main-grid-system - but it will be flipped with the 4 skills cards on the left laid out in a 4 square layout, to the right there will be more text 
-//* REMOVED THESE CLASSNAMES <div className="space-evenly flexBox">
+//TODO - I want the text of the Typer component centered.. but not the font below it. 
