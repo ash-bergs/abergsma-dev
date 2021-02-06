@@ -26,11 +26,8 @@ function ContactForm(){
     }
 
     //TODO i should implement a loading state 
-    //TODO Also need to implement form validation - i.e. a valid email and a non-empty message 
-
-    //* Figured out the error state handling! I was setting state incorrectly in the handler function 
-    // Now that that's done, I'm faced with abstracting logic from UI - i.e. the form, right? 
-
+    //! TODO Also need to implement form validation - i.e. a valid email and a non-empty message 
+    // Right now I am just using the `required` prop. Simple, inelegant, but it works. 
 
     return(
         <Container>
@@ -47,10 +44,16 @@ function ContactForm(){
                     action="https://formspree.io/f/xeqpnvpl"
                     method="POST"
                 >
-                    <label>Email:</label>
-                    <input type="email" name="email" /> 
-                    <label>Message:</label>
-                    <input type="text" name="message" className="textbox" />
+                    <label htmlFor="email"></label>
+                    <input type="email" name="email" placeholder="Your email" required/> 
+                    <label htmlFor="message"></label>
+                    <textarea 
+                        name="message" 
+                        className="textbox" 
+                        placeholder="Your message here...." 
+                        rows={5}
+                        cols={5}
+                        required/>
                     {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : <button type="submit">Submit</button>}
                 </form>
                 </div> }
@@ -61,3 +64,19 @@ function ContactForm(){
 }
 
 export default ContactForm; 
+
+//TODO - The message input is buggy... vertically centering the new text inside of it. I want it to start at the top. 
+//? Does this have something to do with flexbox settings? Or is it just the nature of the input? How can I fix it? 
+// While I do think this has something to do with the flex settings wrapping the children, it seems my primary problem could be solved by using *the right tool for the right job* 
+
+//* 👆 the answers to all of these questions, and more! 👇
+/* 
+the INPUT element specifies a SINGLE LINE input - pressing enter, for example, escapes the input. Because it's a single line! If a user pressed enter in an element intended to contain only one line, then we would assume they're done and want to leave. 
+
+We *could* spend forever trying to code to fix for that... or just use the element intended for MULTI-LINE inputs. The TEXTAREA component. 
+? Textarea elements have a lot of properties, like cols and rows, value, and so on. 
+? Cols? Wouldn't that split the text area up oddly? 
+*/
+
+//? Accessibility - how accessible is this form in its current state? How can I improve it? 
+//* ARIA labels, alt tags and so on.... how do these specifically apply to a form? 
