@@ -1,0 +1,21 @@
+.main-button {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0.15em solid #FFFFFF; 
+    border-radius: 0.20em;
+    text-decoration: none;
+    font-family: $main-type;
+    font-size: $main-type-size;
+    font-weight: bold;
+    color: white; 
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.2s;
+
+    &:hover {
+        color: $color-black; 
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
