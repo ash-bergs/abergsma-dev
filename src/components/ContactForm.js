@@ -54,7 +54,7 @@ function ContactForm(){
                         rows={5}
                         cols={5}
                         required/>
-                    {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : <button type="submit">Submit</button>}
+                    {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : <button className="main-button" type="submit">Submit</button>}
                 </form>
                 </div> }
 
