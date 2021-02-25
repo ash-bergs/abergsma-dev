@@ -57,3 +57,10 @@ button {
     padding: 1%;
     margin: 1%;
 }
+
+//* Notification messages, success and failure 
+
+.successMsg {
+    font-size: $main-type-size;
+    font-family: $main-type;
+}
