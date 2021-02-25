@@ -1,9 +1,12 @@
-import React, { useState } from 'react'; 
+import React, { useState, useRef } from 'react'; 
+// react-rewards is a library for microinteraction animations, like confetti! 
+import Reward from 'react-rewards'; 
 
 import Container from './common_components/Container'; 
 
 function ContactForm(){
     const [status, setStatus] = useState(""); 
+    let reward = useRef(null); 
 
     const submitForm = (event) => {
         event.preventDefault(); 
@@ -23,6 +26,7 @@ function ContactForm(){
             }
         };
         xhr.send(data); 
+        reward.rewardMe(); 
     }
 
     //TODO i should implement a loading state 
@@ -54,7 +58,19 @@ function ContactForm(){
                         rows={5}
                         cols={5}
                         required/>
-                    {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : <button className="main-button" type="submit">Submit</button>}
+                    {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : 
+                    // ? The rewards button animation needs a reference... how do I correctly do that in functional again?? 
+                    // useRef is a hook, I set it initially to be null, and then once the page renders and the Rewards component mounts, it is set to be the reference on the reference so we can fire the rewardMe() method 🦄 Very fun library! 
+                        <Reward
+                            ref={ref => {
+                                reward = ref;
+                            }}
+                            type="confetti"
+                            >
+                            <div className="flexBox center">
+                            <button className="main-button" type="submit">Submit</button>
+                            </div>
+                        </Reward> }
                 </form>
                 </div> }
 
