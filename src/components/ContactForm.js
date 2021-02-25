@@ -58,19 +58,21 @@ function ContactForm(){
                         rows={5}
                         cols={5}
                         required/>
-                    {status === "SUCCESS" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Thanks for reaching out! I'll get back to you in a jiff!</p> : 
-                    // ? The rewards button animation needs a reference... how do I correctly do that in functional again?? 
-                    // useRef is a hook, I set it initially to be null, and then once the page renders and the Rewards component mounts, it is set to be the reference on the reference so we can fire the rewardMe() method 🦄 Very fun library! 
+                    {status === "SUCCESS" ? <p className="successMsg">Thanks for reaching out! I'll get back to you in a jiff!</p> : 
+                    <p></p>}
+                    <div style={{ textAlign: 'center'}}>
                         <Reward
                             ref={ref => {
                                 reward = ref;
                             }}
                             type="confetti"
+                            config={{
+                                elementCount: 200
+                            }}
                             >
-                            <div className="flexBox center">
                             <button className="main-button" type="submit">Submit</button>
-                            </div>
-                        </Reward> }
+                        </Reward>
+                    </div>
                 </form>
                 </div> }
 
