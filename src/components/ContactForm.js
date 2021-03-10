@@ -83,7 +83,7 @@ function ContactForm(){
 
 export default ContactForm; 
 
-//TODO - The message input is buggy... vertically centering the new text inside of it. I want it to start at the top. 
+// ☑ - The message input is buggy... vertically centering the new text inside of it. I want it to start at the top. 
 //? Does this have something to do with flexbox settings? Or is it just the nature of the input? How can I fix it? 
 // While I do think this has something to do with the flex settings wrapping the children, it seems my primary problem could be solved by using *the right tool for the right job* 
 
@@ -98,3 +98,5 @@ We *could* spend forever trying to code to fix for that... or just use the eleme
 
 //? Accessibility - how accessible is this form in its current state? How can I improve it? 
 //* ARIA labels, alt tags and so on.... how do these specifically apply to a form? 
+
+//TODO Turn off the textarea resize option - I think I remember how to do this, but not sure. 
