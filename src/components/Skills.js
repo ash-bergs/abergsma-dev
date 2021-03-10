@@ -12,7 +12,7 @@ function Skills(props) {
         <div className="main-grid-system">
             <div className="row">
                 <div className="col-1-of-2">
-                    <div className="four-square-system u-center-content">
+                    <div className="four-square-system">
                         {/* mapping over skillCardsData here, to render a SkilLCard for each object in the array passed as "card" */}
                         {skillCardsData.map((card, index) => (
                             <SkillCard card={card} key={index} />

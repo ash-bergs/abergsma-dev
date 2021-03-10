@@ -1,6 +1,6 @@
 .skill-card {
     color: $color-black;
-    padding: 2.0rem;
+    padding: 1.2rem;
     width: 25rem;
     border-radius: 5px;
     text-align: center;
@@ -28,6 +28,7 @@
     // without -webkit-background-clip the gradient is applied to the background, not the icon
     background-image: linear-gradient(to bottom, $color-black, black);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 
     &.fa-language {
