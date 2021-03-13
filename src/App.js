@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 
 import './sass/App.scss';
+import Footer from './components/Footer'; 
 import MyForm from './components/ContactForm'; 
-import Hero from './components/Hero'; 
+import Hero from './components/hero/Hero'; 
 import Nav from './components/Nav'; 
 
 function App() {
@@ -19,8 +20,7 @@ function App() {
           <Hero />
         </Route>
       </Switch>
-      {/* //TODO Route path="/contact" */}
-      {/* //TODO Route path="/seeMore" Not sure on the path name yet - a place to list social medias and interesting dev social platforms */}
+      <Footer />
     </Router>
   );
 }

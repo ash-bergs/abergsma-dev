@@ -1,9 +1,11 @@
 import React from 'react'; 
 
-import About from './About'; 
-import Container from './common_components/Container'; 
+import About from '../about-me/About'; 
+import Closer from '../closer/Closer'; 
+import Container from '../common_components/Container'; 
 import Headline from './Headline'; 
-import Skills from './Skills'; 
+import Skills from '../skills/Skills'; 
+
 
 
 function Hero() {
@@ -15,6 +17,7 @@ function Hero() {
             <Container className="about">
                 <About /> 
                 <Skills />
+                <Closer />
             </Container>
         </section>
     );
