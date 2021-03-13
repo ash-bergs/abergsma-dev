@@ -1,7 +1,7 @@
 // Classnames: main-grid-system, row, col-1-of-2, col-1-of-4
 
 .main-grid-system {
-    width: 90%; 
+    width: 95%; 
     margin: 0 auto;
 }
 
@@ -13,6 +13,7 @@
     @include clearfix; 
 
     .col-1-of-2 {
+        //border: 1px solid red;
         width: calc((100% - #{$gutter-horizontal}) / 2); 
         float: left; 
 
@@ -29,10 +30,15 @@ $gutter-vertical: 5rem;
 $gutter-horizontal: 5rem; 
 */
 
+//TODO - The elements in the grid need to be centered in their containing block... Currently confused on what the grid-row and grid-template-columns is really doing. 
+// ! read this stackOverflow article when you come back. https://stackoverflow.com/questions/45536537/centering-in-css-grid#:~:text=To%20center%20content%20horizontally%20in,use%20the%20text%2Dalign%20property.&text=Note%20that%20for%20vertical%20centering,inline%20and%20table%2Dcell%20containers.
+// ! Figure out how to center the cards in the grid from here. Using padding or margin on the card doesn't seem like a best practice answer. 
+
 .four-square-system {
+    border: 1px solid white;
     display: grid; 
-    grid-template-columns: 48% 48%;
-    grid-row: auto auto; 
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto / auto;
     //column-gap: $gutter-horizontal;
-    row-gap: $gutter-horizontal;
+    //row-gap: $gutter-horizontal;
 }

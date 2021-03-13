@@ -21,7 +21,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-//TODO Implement this setting, fix current sizes before saving
 html {
     // This defines what 1rem is
     font-size: 62.5%;
@@ -31,7 +30,7 @@ body {
 	overflow-x: hidden;
 }
 
-//* header refers to the layout of the top of the page, a global, hardcoded setting
+// header controls height of hero section
 .header {
 	height: 90vh; 
 	
@@ -40,16 +39,18 @@ body {
 	}
 }
 
-/* Container control panel */ 
-
+// Container is a common component
 .Container {
 	width: 100%;
 }
 
+// about class contains everything below the Hero section.
+//TODO I should restructure this somehow 🤔
 .about {
-	padding: 10% 0;
-	// move the margin top UP to cover gap 👇
-	margin-top: -15vh;
-	background-color: $color-black;
+	position: relative;
+	// z index given so it covers the bottom of the FlowerCard images 
+	z-index: 1;
+	padding: 5% 0;
+	background-color: $primary-medium;
 	color: white;
 }

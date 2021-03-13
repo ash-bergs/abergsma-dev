@@ -3,7 +3,7 @@
     height: 60vh;
     width: 50vw;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 55%;
 
     @include respond(phone) {
@@ -14,6 +14,7 @@
 .base {
     background-image: url('../resources/images/flowerCard_base.svg');
     background-size: cover;
+    z-index: 0;
 }
 
 .top {

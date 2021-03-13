@@ -1,6 +1,6 @@
 import React from 'react'; 
 
-import projectsData from '../resources/projectsData'; 
+import projectsData from '../../resources/projectsData'; 
 
 function ImageCarousel() {
     return (

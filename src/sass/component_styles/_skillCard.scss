@@ -1,7 +1,14 @@
+// skills-bar refers to the entire DIV that houses the skill cards (the parent level div)
+.skills-bar {
+    padding: 5% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .skill-card {
     color: $color-black;
-    padding: 2.0rem;
-    width: 25rem;
+    padding: 1%;
+    width: 20%;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(black, .15);
@@ -18,6 +25,10 @@
         .skill-list {
             font-weight: bold;
         }
+
+        .fas {
+            background-image: linear-gradient(to bottom, $color-black, $medium-gray);
+        }
     }
 }
 
@@ -26,8 +37,9 @@
     font-size: 6.0rem;
     //* all of the rules below need each other to work properly
     // without -webkit-background-clip the gradient is applied to the background, not the icon
-    background-image: linear-gradient(to bottom, $color-black, black);
+    background-image: linear-gradient(to bottom, $color-black, $color-black);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 
     &.fa-language {
