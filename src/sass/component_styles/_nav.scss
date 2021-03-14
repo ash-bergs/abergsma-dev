@@ -1,13 +1,19 @@
 //* Styles here affect elements in the Nav component
 
 nav {
+  height: 6vh;
   width: 100%;
-  padding: .10%;
   background: $color-black;
-  position: fixed;
+  display: flex;
+  align-items: center;
+  // want the nav to scroll with the user 
+  position: sticky;
+  // top prop must be set for sticky to work (or bottom, left, right)
   top: 0;
-  z-index: 1;
+  // z index so it appears on top of the other elements as it's scrolled
+  z-index: 2;
 
+  // media sizing: Nav bar becomes light, white text on black background is hard to read on phones 
   @include respond(phone) {
     background-color: $color-yellow;
   }
@@ -21,11 +27,11 @@ nav {
 .navItem:hover {
   color: $color-yellow;
 }
-// Nav typography
 
+// Nav typography
 .navItem {
   color: white;
-  font-size: 2.4rem;
+  font-size: 3.0rem;
   font-family: $main-type;
   transition: all 1s;
 
@@ -35,19 +41,19 @@ nav {
 }
 
 .navAnchor {
-  display: flex;
+  margin-left: .8%;
 }
 
 .navTitle {
   font-size: 3.2rem;
   color: $color-yellow; 
   font-family: $limited-title;
+  font-size: 4.0rem;
   letter-spacing: -2.0px;
-  position: relative;
-  left: 12%;
-  padding-top: 2%;
 }
 
+// makes the link underlining yellow 
+// looks better than underlining, because that clips the 'g' character 
 .navTitle-link {
   text-decoration-color: $color-yellow;
 }
