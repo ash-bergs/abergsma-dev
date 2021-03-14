@@ -5,6 +5,7 @@ headlineBg - the div holding the entirety of the headline section
 innerContent - div holding my name and subtitle 
 */
 
+//TODO try making the filter over the bg a lighter color? It doesn't mesh with the new colors that well....
 .headlineBg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0)), url("../resources/images/header-background.jpg");
     height: 100vh;
