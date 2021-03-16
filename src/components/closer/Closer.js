@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import SocialBar from './SocialBar'; 
+import SocialBar from './SocialBar'; 
 import Typer from '../common_components/Typer'; 
 
 function Closer() {
@@ -24,6 +24,7 @@ function Closer() {
                 <br/>
                 <p className="small-text"> I love working on teams! I know that to build a team environment means being flexible, communicative and thoughtful in my feedback. I have experience working on fully remote teams, filling both back and frontend roles. These teams used Agile methodologies to coordinate team effort, and I've since implemented many of those approaches into my personal workflow. If you're interested in hearing what peers have to say about working with me, please see my SearchLight profile, linked below.</p>
                 {/* SOCIAL BAR RENDERING HERE WHEN COMPLETE */}
+                
             </div>
         </div>
     )

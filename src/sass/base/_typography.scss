@@ -5,34 +5,7 @@
 .link {
     text-decoration: none;
   }
-// Headline typography
-//* name, top-stagger and bottom-stagger control name in Headline component
 
-.top-stagger {
-    position: relative;
-    left: -17%;
-
-    @include respond(phone) {
-        left: 0;
-    }
-}
-
-.bottom-stagger {
-    color: $color-yellow;
-    position: relative;
-    top: -1.5rem;
-    left: 13%; 
-
-    @include respond(phone) {
-        left: 0; 
-        color: black;
-    }
-}
-
-.headline {
-    font-family: $limited-title;
-    letter-spacing: -1px;
-}
 
 //* limited title = very very large titles, use once maybe twice
 .limited-title {
@@ -48,10 +21,12 @@
 .section-subtitle {
     font-size: 4.0rem;
     margin-bottom: 2%;
+    font-family: $limited-title;
+    letter-spacing: -1px;
 }
 
 .highlighted {
-    color: $color-yellow;
+    color: $text-yellow;
 }
 
 .small-text {

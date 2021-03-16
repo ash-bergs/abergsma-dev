@@ -26,8 +26,9 @@ html {
     font-size: 62.5%;
 }
 
+// hides the horizontal and vertical scrollbars 
 body {
-	overflow-x: hidden;
+	&::-webkit-scrollbar {display:none;}
 }
 
 // header controls height of hero section
@@ -44,13 +45,11 @@ body {
 	width: 100%;
 }
 
-// about class contains everything below the Hero section.
-//TODO I should restructure this somehow 🤔
 .about {
 	position: relative;
 	// z index given so it covers the bottom of the FlowerCard images 
 	z-index: 1;
 	padding: 5% 0;
-	background-color: $primary-medium;
+	background-color: #4d6b53;
 	color: white;
 }
