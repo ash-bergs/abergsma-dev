@@ -2,17 +2,28 @@
 .skills-bar {
     padding: 5% 5%;
     display: flex;
+    margin-bottom: 5%;
     justify-content: space-around;
+    
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .skill-card {
-    color: $color-black;
+    color: white;
     padding: 1%;
     width: 20%;
-    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    border: 0.01rem solid darkslategrey;
+    border-radius: .5rem;
     text-align: center;
-    box-shadow: 0 1.5rem 4rem rgba(black, .15);
-    background-color: $color-yellow;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.24); 
+    //* this will have to change, for frosted glass effect 
+    //background-color: $color-yellow;    
+    background: inherit; 
+    overflow: hidden;
     transition: all .3s;
 
     &:hover {
@@ -27,9 +38,31 @@
         }
 
         .fas {
-            background-image: linear-gradient(to bottom, $color-black, $medium-gray);
+            //background-image: linear-gradient(to bottom, $color-black, $color-yellow);
         }
     }
+
+    
+  @include respond(phone) {
+    width: 60%;
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: 6%;
+    }
+  }
+}
+
+.skill-card:before {
+    content: ""; 
+    position: absolute;
+    background: inherit; 
+    z-index: -2; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.37);
+    filter: blur(10px);
 }
 
 .fas {
@@ -37,7 +70,7 @@
     font-size: 6.0rem;
     //* all of the rules below need each other to work properly
     // without -webkit-background-clip the gradient is applied to the background, not the icon
-    background-image: linear-gradient(to bottom, $color-black, $color-black);
+    background-image: linear-gradient(to bottom, white, white);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -53,8 +86,11 @@
 // All other specific to the skill card font styles are here. 
 
 .card-title {
-    font-size: 3.8rem;
+    font-size: 4.0rem;
+    margin: 0 auto;
     margin-bottom: 2%;
+    font-family: $limited-title;
+    letter-spacing: -1px;
     transition: all .3s;
 }
 // Adds border beneath subtitle 
@@ -62,8 +98,9 @@
     content: ""; 
     display: block; 
     margin: 0 auto; 
-    width: 45%; 
-    border-bottom: 3px solid $color-black;
+    width: 25%; 
+    border-bottom: 3px solid white;
+    transition: all .3s;
 }
 
 .skill-list {
