@@ -12,11 +12,6 @@ nav {
   top: 0;
   // z index so it appears on top of the other elements as it's scrolled
   z-index: 2;
-
-  // media sizing: Nav bar becomes light, white text on black background is hard to read on phones 
-  @include respond(phone) {
-    background-color: $color-yellow;
-  }
 }
 
 .navItem {
@@ -25,7 +20,7 @@ nav {
 } 
 
 .navItem:hover {
-  color: $color-yellow;
+  color: $text-yellow;
 }
 
 // Nav typography
@@ -34,19 +29,19 @@ nav {
   font-size: 3.0rem;
   font-family: $main-type;
   transition: all 1s;
-
-  @include respond(phone) {
-      color: $color-black; 
-  }
 }
 
 .navAnchor {
   margin-left: 2%;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .navTitle {
-  font-size: 3.2rem;
-  color: $color-yellow; 
+  font-size: 3.0rem;
+  color: $text-yellow; 
   font-family: $limited-title;
   font-size: 4.0rem;
   letter-spacing: -2.0px;
@@ -55,5 +50,5 @@ nav {
 // makes the link underlining yellow 
 // looks better than underlining, because that clips the 'g' character 
 .navTitle-link {
-  text-decoration-color: $color-yellow;
+  text-decoration-color: $text-yellow;
 }
