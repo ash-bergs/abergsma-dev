@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SocialBar from './SocialBar'; 
+//import SocialBar from './SocialBar'; 
 import Typer from '../common_components/Typer'; 
 
 function Closer() {
