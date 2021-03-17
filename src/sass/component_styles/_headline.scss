@@ -32,6 +32,7 @@ innerContent - div holding my name and subtitle
     font-size: 15.0rem;
     font-family: $limited-title;
     letter-spacing: -1px;
+    text-shadow: 1px 1px 5px black;
 
     @include respond(phone) {
         font-size: 10.0rem;
@@ -41,7 +42,6 @@ innerContent - div holding my name and subtitle
 .headline_first {
     margin-left: 5%;
     align-self: flex-start;
-    //text-shadow: 1px 1px 5px $text-yellow;
 
     @include respond(phone) {
         margin: 0; 
@@ -53,7 +53,6 @@ innerContent - div holding my name and subtitle
     margin-right: 4.5%;
     align-self: flex-end;
     color: #F5CB36;
-    text-shadow: 1px 1px 5px black;
 
     @include respond(phone) {
         margin: 0; 

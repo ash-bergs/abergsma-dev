@@ -70,7 +70,7 @@ function ContactForm(){
                                 elementCount: 200
                             }}
                             >
-                            <button className="main-button" type="submit">Submit</button>
+                            <button className="submit-button" type="submit">Submit</button>
                         </Reward>
                     </div>
                 </form>

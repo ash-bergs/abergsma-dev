@@ -1,5 +1,5 @@
 .contact {
-    background-color: $color-yellow;
+    background-color: #4d6b53;
     height: 100vh;
     
     p {
@@ -9,24 +9,29 @@
 }
 
 .contact-title {
-    text-align: center;
-    font-family: $limited-title;
-    font-size: 4.0rem;
+    //! I'm using these same typography settings a lot - need to revisit making a reusable var for this
     margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 4.0rem;
+    font-family: $limited-title;
+    text-align: center;
+    letter-spacing: -1px;
 }
 
 .contact-form {
     width: 50%;
-    padding: 1%;
+    padding: 2%;
     margin: 0 auto;
     margin-top: 5%;
     background-color: $color-black;
     color: white;
+
+    @include respond(phone) {
+        width: 80%;
+    }
 }
 
 form {
-    font-family: $main-type;
-    font-size: 4.0rem;
     margin: 0 auto;
     padding: 1%;
     display: flex;
