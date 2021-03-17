@@ -1,4 +1,4 @@
-.main-button {
+.submit-button {
     display: inline-block;
     box-sizing: border-box;
     border: 0.15em solid #FFFFFF; 
@@ -10,7 +10,7 @@
     color: white; 
     background-color: transparent;
     text-align: center;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     &:hover {
         color: $color-black; 
