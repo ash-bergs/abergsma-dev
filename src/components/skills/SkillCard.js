@@ -2,7 +2,7 @@ import React from 'react';
 
 function SkillCard({ card }) {
     return (
-        <div className="skill-card">
+        <div className="skill-card frosted-glass__container">
             <i className={card.icon}></i>
             <h3 aria-label="skill class" className="card-title"> {card.title} </h3>
             <ul className="skill-list">
