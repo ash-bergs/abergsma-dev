@@ -1,31 +1,34 @@
-## Personal Portfolio of Ashley Bergsma 
+# Portfolio (in React)
 
-Welcome to my portfolio ☺ Thanks for stopping by, if you're curious how this project was built and organized - keep reading! 
+Welcome to the repo for my current official portfolio - thanks for stopping by! In this readme you'll find some information about how the app was built, learn a little bit about my thought process as I built it, and how I'm constantly adding to it while I learn new things. 
 
-I bootstrapped this app through vercel and create-react-app. The deployed page lives [here](https://abergsma-dev.vercel.app/)
+This app was bootstrapped through Vercel & create-react-app. Built in React and styled with SASS. 
 
-The app is built using React, styled with Sass and CSS. A few packages have been added in for functionality, like react-router-dom, and others for fun - like react-rewards! 
 
 ### Packages/Libraries 
 
 - React-router-dom
-- React Spring 
-- React-Rewards - microinteratctions! 
-- Sass 
+- React Spring - for animations (like the parallax sunflower animation)
+- React-Rewards - because who doesn't love a bit of confetti?
+- Sass - implemented 7-1 architecture. 
 
-Style is given to the page using Sass, files are organized with 7-1 CSS architecture in mind
-
-### Hierarchy 
-
-(include figma grab here)
-
-### Style Samplers 
-
-(include figma grabs here)
-
-Typefaces: 
-- Josefin Sans for titles and headlines 
-- Lato (reg) for the rest
-
+* Fontawesome is included for icons 
 
 ----
+
+### Style Guide 
+
+The lovely view of a sunflower field comes from [unsplash](www.unsplash.com) contributer [Marina Montoya](https://unsplash.com/@pinkmarina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+- Title elements - h1-h6, special links - Josefin Sans 400/reg
+
+Josefin Sans is inspired by the sans-serif styles from the 1920's, featuring a geometric face, with unusual and eye catching proportions. I picked this font because I appreciated the quirkiness of the x-height (half way from baseline to cap height), and the flair added to some of the lesser used characters, like "z". 
+
+The font gives the large titles of the page a vintage and balanced feel, that I feel balances the calming color palette. 
+
+- Body/"generic" elements - p, li, buttons - Lat 400/reg
+
+"Lato" means summer in Polish, and the font lives up to its name with its warm, balanced typeface. In small sizes it's easy to read, and pairs with Josefin Sans harmoniously. 
+
+----
+
