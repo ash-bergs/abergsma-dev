@@ -10,20 +10,26 @@
   }
 }
 
+// ? how can I make this glass effect re-usable? 
+// ? Make a utility class? 
+
+//! what are the things we'll need to take? 
+// * name: frosted-glass__container 
+// CONTAINER class 
+// position: relative; 
+// z-index: 2; 
+// box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.24); 
+// background: inherit; 
+// overflow: hidden; 
+
 .skill-card {
     color: white;
     padding: 1%;
     width: 20%;
-    position: relative;
-    z-index: 2;
     border: 0.01rem solid darkslategrey;
     border-radius: .5rem;
     text-align: center;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.24); 
-    //* this will have to change, for frosted glass effect 
-    //background-color: $color-yellow;    
-    background: inherit; 
-    overflow: hidden;
     transition: all .3s;
 
     &:hover {
@@ -52,18 +58,19 @@
   }
 }
 
-.skill-card:before {
-    content: ""; 
-    position: absolute;
-    background: inherit; 
-    z-index: -2; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.37);
-    filter: blur(10px);
-}
+// this entire thing will be 
+// .skill-card:before {
+//     content: ""; 
+//     position: absolute;
+//     background: inherit; 
+//     z-index: -2; 
+//     top: 0; 
+//     left: 0; 
+//     right: 0; 
+//     bottom: 0; 
+//     box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.37);
+//     filter: blur(10px);
+// }
 
 .fas {
     margin-bottom: 2%;
