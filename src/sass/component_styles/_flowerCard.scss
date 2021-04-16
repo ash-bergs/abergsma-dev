@@ -1,10 +1,14 @@
 //* FlowerCard styles!! 
+
 .base, .top {
+    border: 1px solid red;
     height: 60vh;
     width: 50vw;
+    // position absolute makes sure the images stack
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 55%;
+    
 
     @include respond(phone) {
         display: none;

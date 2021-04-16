@@ -1,1 +1,33 @@
 // TODO - add animations for first and last name - first name will slide in from the left, and last name will slide in from the right 
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem); 
+    }
+
+    80% {
+        transform: translateX(0rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(0rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}

@@ -10,8 +10,6 @@ function Headline() {
                     <p className="headline_first">Ashley</p>
                     <p className="headline_last">Bergsma</p>
                 </div>
-                
-                    <FlowerCard /> 
             </div>
         </section>
     );

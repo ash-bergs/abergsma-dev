@@ -11,7 +11,7 @@ function App() {
   
   return (
     <Router>
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
         <Route path="/contact">
           <MyForm />
@@ -20,7 +20,6 @@ function App() {
           <Hero />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }
