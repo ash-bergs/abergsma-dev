@@ -7,7 +7,9 @@ innerContent - div holding my name and subtitle
 
 //TODO try making the filter over the bg a lighter color? It doesn't mesh with the new colors that well....
 .headlineBg {
-    background-image: url("../resources/images/headline-bg_alt.jpg");
+    background: rgb(0,0,0);
+background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.804359243697479) 53%, rgba(255, 255, 255, 0.288) 100%), url("../resources/images/lantern_bg.jpg");
+
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -25,14 +27,16 @@ innerContent - div holding my name and subtitle
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    //align-self: center;
 }
 
 .headline p {
     font-size: 15.0rem;
-    font-family: $limited-title;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
     letter-spacing: -1px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px $color-black;
+    text-align: center;
 
     @include respond(phone) {
         font-size: 10.0rem;
@@ -44,8 +48,9 @@ innerContent - div holding my name and subtitle
 // }
 
 .headline_first {
-    margin-left: 9%;
-    align-self: flex-start;
+    //margin-left: 9%;
+    //align-self: flex-start;
+    color: white ;
 
     // 💈 animations 
     animation-name: moveInLeft;
@@ -59,9 +64,11 @@ innerContent - div holding my name and subtitle
 }
 
 .headline_last {
-    margin-right: 10%;
-    align-self: flex-end;
+    //margin-right: 10%;
+    margin-top: -6%;
+    //align-self: flex-end;
     color: $text-yellow;
+    
 
     // 💈 animations 
     animation-name: moveInRight;

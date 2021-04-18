@@ -20,9 +20,11 @@
 // section-subtitle controls the bigger headlines that aren't quite titles, but should be larger - and have tension/gravity 
 .section-subtitle {
     font-size: 4.0rem;
+    font-weight: 300;
     margin-bottom: 2%;
-    font-family: $limited-title;
+    font-family: $nunito;
     letter-spacing: -1px;
+    color: white;
 }
 
 .highlighted {
@@ -30,7 +32,8 @@
 }
 
 .small-text {
-    font-family: $main-type;
+    color: white;
+    font-family: $nunito;
 	font-size: $main-type-size;
 	letter-spacing: .8px;
     line-height: 25px;

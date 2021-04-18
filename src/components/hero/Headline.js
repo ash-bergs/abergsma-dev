@@ -1,5 +1,6 @@
 import React from 'react'; 
 import FlowerCard from './FlowerCard'; 
+import About from '../about-me/About'; 
 
 function Headline() {
 
@@ -10,6 +11,7 @@ function Headline() {
                     <p className="headline_first">Ashley</p>
                     <p className="headline_last">Bergsma</p>
                 </div>
+                <About />
             </div>
         </section>
     );
