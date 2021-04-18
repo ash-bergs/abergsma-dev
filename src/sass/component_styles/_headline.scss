@@ -8,7 +8,7 @@ innerContent - div holding my name and subtitle
 //TODO try making the filter over the bg a lighter color? It doesn't mesh with the new colors that well....
 .headlineBg {
     background: rgb(0,0,0);
-background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.804359243697479) 53%, rgba(255, 255, 255, 0.288) 100%), url("../resources/images/lantern_bg.jpg");
+background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.804359243697479) 53%, rgba(255, 255, 255, 0.062) 100%), url("../resources/images/lantern_bg.jpg");
 
     height: 100vh;
     background-size: cover;
