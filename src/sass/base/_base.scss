@@ -31,25 +31,16 @@ body {
 	&::-webkit-scrollbar {display:none;}
 }
 
-// header controls height of hero section
-.header {
-	height: 90vh; 
-	
-	@include respond(phone){
-		height: 50vh;
-	}
-}
-
 // Container is a common component
 .Container {
 	width: 100%;
 }
 
-.about {
-	position: relative;
-	// z index given so it covers the bottom of the FlowerCard images 
-	z-index: 1;
-	padding: 5% 0;
-	background-color: #4d6b53;
-	color: white;
-}
+// .about {
+// 	position: relative;
+// 	// z index given so it covers the bottom of the FlowerCard images 
+// 	z-index: 1;
+// 	padding: 5% 0;
+// 	background-color: $text-yellow;
+// 	color: white;
+// }

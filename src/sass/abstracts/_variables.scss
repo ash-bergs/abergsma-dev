@@ -7,11 +7,11 @@ black - color-black - not quite total black: #262625
 */
 
 $primary-medium: #647369; 
-$color-black: black; 
-$text-yellow: #F5CB36;
-$color-yellow: #FCDCA9; 
-
-//TODO replace these colors...
+$color-black: #292E32; 
+$text-yellow: #F25B4D;
+$color-yellow: #FCDCA9;
+// #FAE34D - yellow 
+//TODO replace these colors.
 $medium-gray: #888682; 
 $light-gray: #CBC5B7; 
 
@@ -28,11 +28,13 @@ Not sure on this one yet
 * title-weight 
 */
 
+$nunito: 'Nunito Sans', sans-serif;
+
 $limited-title: 'Josefin Sans', sans-serif;
 $main-type: 'Lato', sans-serif;
 $title-weight: 500; 
 
-$main-type-size: 1.9rem; 
+$main-type-size: 2.2rem; 
 
 //* ⏹⏹⏹ Grid Settings! ⏹⏹⏹
 
