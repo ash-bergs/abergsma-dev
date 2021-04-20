@@ -31,15 +31,6 @@ body {
 	&::-webkit-scrollbar {display:none;}
 }
 
-// header controls height of hero section
-.header {
-	height: 90vh; 
-	
-	@include respond(phone){
-		height: 50vh;
-	}
-}
-
 // Container is a common component
 .Container {
 	width: 100%;

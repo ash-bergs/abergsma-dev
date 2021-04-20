@@ -2,11 +2,12 @@ import React from 'react';
 import About from '../about-me/About'; 
 import Socials from '../socials/Socials'; 
 
+
 function Headline() {
 
     return(
         <section className="headlineBg">
-            <div className="flexBox column header">
+            <div className="header">
                 <div className="headline">
                     <p className="headline_first">Ashley</p>
                     <p className="headline_last">Bergsma</p>

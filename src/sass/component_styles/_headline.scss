@@ -5,14 +5,27 @@ headlineBg - the div holding the entirety of the headline section
 innerContent - div holding my name and subtitle 
 */
 
-//TODO try making the filter over the bg a lighter color? It doesn't mesh with the new colors that well....
-.headlineBg {
-    background: rgb(0,0,0);
-background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.804359243697479) 53%, rgba(255, 255, 255, 0.062) 100%), url("../resources/images/lantern_bg.jpg");
+.header {
+	//height: 90vh; 
+	//margin-left: 5%;
+    background-image: url('../resources/images/lanterns-svg.svg');
+    // filter: invert(4%) sepia(9%) saturate(6115%) hue-rotate(356deg) brightness(94%) contrast(105%);
+    // filter: drop-shadow(6px 2px 2px rgba($text-yellow, 0.349));
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top right;
+    padding-left: 5%;
+	@include respond(phone){
+		justify-items: center;
+	}
+}
 
+
+.headlineBg {
+    background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.804359243697479) 53%, rgba(255, 255, 255, 0.062) 100%), url("../resources/images/lantern_bg.jpg");
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     position: relative;
 
     @include respond(phone) {
@@ -23,20 +36,20 @@ background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.8043592436974
 //* target the actual headline - my name! 
 .headline {
     width: 50%;
-    //padding: 5%;
-    margin-top: 5%;
+    padding-top: 2.5%;
+    //margin-top: 5%;
     display: flex;
     flex-direction: column;
-    //align-self: center;
+    align-items: center;
 }
 
 .headline p {
-    font-size: 15.0rem;
-    font-weight: 300;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13.0rem;
+    font-weight: 700;
+    font-family: 'Megrim', cursive;
     letter-spacing: -1px;
     text-shadow: 1px 1px 5px $color-black;
-    text-align: center;
+    //text-align: center;
 
     @include respond(phone) {
         font-size: 10.0rem;
@@ -65,7 +78,7 @@ background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.8043592436974
 
 .headline_last {
     //margin-right: 10%;
-    margin-top: -6%;
+    //margin-top: -10%;
     //align-self: flex-end;
     color: $text-yellow;
     
@@ -81,3 +94,23 @@ background: linear-gradient(85deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0.8043592436974
       }
 }
 
+// .lanterns {
+//     background-image: url('../resources/images/lanterns-svg.svg');
+//     filter: invert(4%) sepia(9%) saturate(6115%) hue-rotate(356deg) brightness(94%) contrast(105%);
+//     filter: drop-shadow(6px 2px 2px rgba($text-yellow, 0.349));
+//     background-size: 50%;
+//     background-position: bottom right;
+//     //background-repeat: no-repeat;
+//     position: fixed;
+//     left: 50%;
+//     height: 70vh;
+//     width: 50vw;
+
+//     @include respond(phone) {
+//         display: none;
+//       }
+
+//     @include respond(tab-port) {
+//         background-repeat: no-repeat;
+//     }
+// }

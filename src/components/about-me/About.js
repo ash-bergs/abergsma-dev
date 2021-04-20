@@ -1,8 +1,5 @@
 import React from 'react'; 
 
-import Container from '../common_components/Container'; 
-import ImageCarousel from './ImageCarousel'; 
-
 function About() {
 
     return(

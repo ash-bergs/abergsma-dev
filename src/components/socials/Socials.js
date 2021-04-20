@@ -3,9 +3,11 @@ import SocialLink from './SocialLink';
 
 //* svg icon imports 
 import blogIcon from "./blog-icon.svg"; 
-import linkedIcon from "./linkedIn-icon-alt.svg";
+import githubIcon from "./github-icon.svg"
+import linkedIcon from "./linked-icon.svg";
 import searchlightIcon from "./searchlight-icon.svg"
 import twitterIcon from "./twitter-icon.svg";
+
 
 
 const socials = [
@@ -19,7 +21,7 @@ const socials = [
       name: "GitHub",
       src: "https://github.com/ash-bergs",
       alt: "GitHub profile",
-      icon: searchlightIcon
+      icon: githubIcon
     },
     {
       name: "SearchLight",

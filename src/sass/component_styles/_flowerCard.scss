@@ -6,8 +6,8 @@
     width: 50vw;
     // position absolute makes sure the images stack
     position: absolute;
-    top: 40%;
-    left: 55%;
+    //top: 40%;
+    //left: 55%;
     
 
     @include respond(phone) {
@@ -16,13 +16,13 @@
 }
 
 .base {
-    background-image: url('../resources/images/flowerCard_base.svg');
-    background-size: cover;
-    z-index: 0;
+    background-image: url('../resources/images/lantern-bg.svg');
+    background-repeat: no-repeat;
+    z-index: 3;
 }
 
 .top {
-    background-image: url('../resources/images/flowerCard_top.svg');
-    background-size: cover;
+    background-image: url('../resources/images/chains.svg');
+    
 }
 
