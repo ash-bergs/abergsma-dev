@@ -32,6 +32,11 @@
     }
 }
 
+/* Background image animation */
+@keyframes animatedBackground {
+    from { background-position: 0 -50rem; }
+    to { background-position: 0 0; }
+}
 
 //! Idea : Have the social media icons fade in sequentually... I need to create a delay somehow 🤔🤔🤔🤔
 // @keyframes fadeIn {
