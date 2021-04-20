@@ -31,3 +31,30 @@
         transform: translateX(0rem);
     }
 }
+
+/* Background image animation */
+@keyframes animatedBackground {
+    from { background-position: 0 -50rem; }
+    to { background-position: 0 0; }
+}
+
+//! Idea : Have the social media icons fade in sequentually... I need to create a delay somehow 🤔🤔🤔🤔
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0; 
+//         visibility: hidden;
+//         transition: opacity 0.5s ease-in, visibility 0.5s;
+
+//     // adjust for loop to total number of elements
+//     @for $i from 1 through 5 {
+//       &:nth-child(#{$i}n) {
+//         transition-delay: #{$i * 0.25}s;
+//       }
+//     }
+    
+
+//     100% {
+//       opacity: 1;
+//       visibility: visible;
+//     }
+//   }

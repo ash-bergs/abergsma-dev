@@ -13,8 +13,11 @@ innerContent - div holding my name and subtitle
     // filter: drop-shadow(6px 2px 2px rgba($text-yellow, 0.349));
     background-size: contain;
     background-repeat: repeat-x;
-    background-position: top right;
+    background-position: 0px 0px;
     padding-left: 5%;
+
+    animation: animatedBackground 2s ease-out;
+
 	@include respond(phone){
 		justify-items: center;
 	}
