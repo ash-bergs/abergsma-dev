@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 
 import './sass/App.scss';
-//import Footer from './components/Footer'; 
+import Footer from './components/Footer'; 
 import MyForm from './components/ContactForm'; 
 import Hero from './components/hero/Hero'; 
 //import Nav from './components/Nav'; 
@@ -20,6 +20,7 @@ function App() {
           <Hero />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
