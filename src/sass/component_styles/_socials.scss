@@ -3,6 +3,10 @@
     margin-top: 2%;
     display: flex;
     justify-content: space-evenly;
+
+    @include respond(phone) {
+        width: 100%;
+      }
 }
 
 .iconBox {

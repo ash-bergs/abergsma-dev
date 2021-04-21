@@ -6,15 +6,11 @@ innerContent - div holding my name and subtitle
 */
 
 .header {
-	//height: 90vh; 
-	//margin-left: 5%;
     background-image: url('../resources/images/lanterns-svg.svg');
-    // filter: invert(4%) sepia(9%) saturate(6115%) hue-rotate(356deg) brightness(94%) contrast(105%);
-    // filter: drop-shadow(6px 2px 2px rgba($text-yellow, 0.349));
     background-size: contain;
     background-repeat: repeat-x;
     background-position: 0px 0px;
-    padding-left: 5%;
+    padding: 0 10%;
 
     animation: animatedBackground 2s ease-out;
 
@@ -33,17 +29,21 @@ innerContent - div holding my name and subtitle
 
     @include respond(phone) {
         height: 100vh;
+        background-size: 200%;
       }
 }
 
 //* target the actual headline - my name! 
 .headline {
     width: 50%;
-    padding-top: 2.5%;
-    //margin-top: 5%;
+    padding-top: 3.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(phone) {
+        width: 100%;
+      }
 }
 
 .headline p {
@@ -52,20 +52,13 @@ innerContent - div holding my name and subtitle
     font-family: 'Megrim', cursive;
     letter-spacing: -1px;
     text-shadow: 1px 1px 5px $color-black;
-    //text-align: center;
 
     @include respond(phone) {
         font-size: 10.0rem;
       }
 }
 
-// .headline_first, .headline_last {
-//     align-self: center;
-// }
-
 .headline_first {
-    //margin-left: 9%;
-    //align-self: flex-start;
     color: white ;
 
     // 💈 animations 
@@ -80,9 +73,7 @@ innerContent - div holding my name and subtitle
 }
 
 .headline_last {
-    //margin-right: 10%;
-    //margin-top: -10%;
-    //align-self: flex-end;
+    //! this variable name, text-yellow, really needs to be updated lol
     color: $text-yellow;
     
 
@@ -96,24 +87,3 @@ innerContent - div holding my name and subtitle
         align-self: center;
       }
 }
-
-// .lanterns {
-//     background-image: url('../resources/images/lanterns-svg.svg');
-//     filter: invert(4%) sepia(9%) saturate(6115%) hue-rotate(356deg) brightness(94%) contrast(105%);
-//     filter: drop-shadow(6px 2px 2px rgba($text-yellow, 0.349));
-//     background-size: 50%;
-//     background-position: bottom right;
-//     //background-repeat: no-repeat;
-//     position: fixed;
-//     left: 50%;
-//     height: 70vh;
-//     width: 50vw;
-
-//     @include respond(phone) {
-//         display: none;
-//       }
-
-//     @include respond(tab-port) {
-//         background-repeat: no-repeat;
-//     }
-// }
