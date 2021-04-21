@@ -14,7 +14,7 @@ innerContent - div holding my name and subtitle
     background-size: contain;
     background-repeat: repeat-x;
     background-position: 0px 0px;
-    padding-left: 5%;
+    padding: 0 10%;
 
     animation: animatedBackground 2s ease-out;
 
@@ -44,6 +44,10 @@ innerContent - div holding my name and subtitle
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(phone) {
+        width: 100%;
+      }
 }
 
 .headline p {

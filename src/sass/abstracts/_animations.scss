@@ -32,6 +32,20 @@
     }
 }
 
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
 /* Background image animation */
 @keyframes animatedBackground {
     from { background-position: 0 -50rem; }

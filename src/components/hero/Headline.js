@@ -28,7 +28,7 @@ export default Headline;
                     <h1 className="headline limited-title"><span className="bottom-stagger">Bergsma</span></h1>
                 </div>
 */
-
+ 
 /* -------------------------------------------------------------------------- */
 /*
 I need to consider how to align this headline
