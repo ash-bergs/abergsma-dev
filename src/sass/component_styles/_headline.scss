@@ -29,6 +29,7 @@ innerContent - div holding my name and subtitle
 
     @include respond(phone) {
         height: 100vh;
+        background-size: 200%;
       }
 }
 
@@ -36,7 +37,6 @@ innerContent - div holding my name and subtitle
 .headline {
     width: 50%;
     padding-top: 3.5%;
-    //margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,6 @@ innerContent - div holding my name and subtitle
     font-family: 'Megrim', cursive;
     letter-spacing: -1px;
     text-shadow: 1px 1px 5px $color-black;
-    //text-align: center;
 
     @include respond(phone) {
         font-size: 10.0rem;
