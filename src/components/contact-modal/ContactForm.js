@@ -2,9 +2,7 @@ import React, { useState, useRef } from 'react';
 // react-rewards is a library for microinteraction animations, like confetti! 
 import Reward from 'react-rewards'; 
 
-import Container from './common_components/Container'; 
-
-function ContactForm(){
+function Form(){
     const [status, setStatus] = useState(""); 
     let reward = useRef(null); 
 
@@ -34,7 +32,7 @@ function ContactForm(){
     // Right now I am just using the `required` prop. Simple, inelegant, but it works. 
 
     return(
-        <Container>
+        <React.Fragment>
             <div className="flexBox column contact">
 
                 { status === "ERROR" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Something went wrong. Sorry about that! You can reach out to me directly <a href="mailto:ashley.bergsma42@gmail.com">here</a></p> 
@@ -77,11 +75,11 @@ function ContactForm(){
                 </div> }
 
             </div>
-        </Container>
+        </React.Fragment>
     );
 }
 
-export default ContactForm; 
+export default Form; 
 
 // ☑ - The message input is buggy... vertically centering the new text inside of it. I want it to start at the top. 
 //? Does this have something to do with flexbox settings? Or is it just the nature of the input? How can I fix it? 
