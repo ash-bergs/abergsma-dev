@@ -38,9 +38,6 @@ function Form(){
                 { status === "ERROR" ? <p style={{ fontSize: '4.0rem', color: 'red' }}>Something went wrong. Sorry about that! You can reach out to me directly <a href="mailto:ashley.bergsma42@gmail.com">here</a></p> 
                 :
                 <div className="contact-form">
-                <h2 className="contact-title">Reach Out</h2>
-                <p className="small-text">Want to get ahold of me about commissioning some work, collaborating, or just to talk? </p>
-                <p className="small-text">Fill out the form below and I'll get back to you quickly.</p>
                 <form
                     onSubmit={submitForm}
                     action="https://formspree.io/f/xeqpnvpl"
@@ -68,7 +65,7 @@ function Form(){
                                 elementCount: 200
                             }}
                             >
-                            <button className="submit-button" type="submit">Submit</button>
+                            <button className="btn" type="submit">Submit</button>
                         </Reward>
                     </div>
                 </form>

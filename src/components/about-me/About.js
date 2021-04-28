@@ -9,7 +9,7 @@ function About() {
                     <span aria-label="introduction" id="intro" className="section-subtitle">I'm a <span className="highlighted">full stack engineer</span> based in Phoenix, Arizona.</span>
 
                     <p className="small-text" aria-labelledby="intro">I believe the internet is for everyone and it's up to developers to keep it that way. I have a passion for creating beautiful and accessible web and mobile applications, writing illuminating technical articles and challenging myself to learn and create new things daily.</p>
-                    <Container triggerText="Contact Me" />
+                    <Container triggerText="Contact" />
                     <span className="line"></span>
                 </div>
         </div>
