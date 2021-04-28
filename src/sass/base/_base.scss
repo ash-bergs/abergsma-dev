@@ -32,16 +32,15 @@ body {
 	&::-webkit-scrollbar {display:none;}
 }
 
-// Container is a common component
-.Container {
-	width: 100%;
+// btn class is shared among all buttons on the page, so they're all styled consistently
+.btn {
+	border-radius: 2.5em;
+	//height: 5vh;
+	font-family: $main-type;
+	font-size: 1.9rem;
+	transition: all 0.2s;
 }
-
-// .about {
-// 	position: relative;
-// 	// z index given so it covers the bottom of the FlowerCard images 
-// 	z-index: 1;
-// 	padding: 5% 0;
-// 	background-color: $text-yellow;
-// 	color: white;
-// }
+  
+.btn:hover {
+	transform: scale(1.1);
+}
