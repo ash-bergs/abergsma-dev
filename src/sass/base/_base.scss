@@ -34,12 +34,52 @@ body {
 
 // btn class is shared among all buttons on the page, so they're all styled consistently
 .btn {
-	border-radius: 2.5em;
 	font-family: $main-type;
 	font-size: 1.9rem;
-	transition: all 0.2s;
+	transition: all 0.3s;
+
+	box-shadow:inset 0px 0px 15px 3px #ff594a;
+	background:linear-gradient(to bottom, #eb958d 5%, #d6483c 100%);
+	background-color:#d6483c;
+	border-radius:17px;
+	border:1px solid #f25b4d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b52b1f;
 }
   
 .btn:hover {
 	transform: scale(1.1);
+	background:linear-gradient(to bottom, #d6483c 5%, #eb958d 100%);
+	background-color:#eb958d;
 }
+
+/*
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #ff594a;
+	background:linear-gradient(to bottom, #d6483c 5%, #eb958d 100%);
+	background-color:#d6483c;
+	border-radius:17px;
+	border:1px solid #f25b4d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b52b1f;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #eb958d 5%, #d6483c 100%);
+	background-color:#eb958d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+*/
