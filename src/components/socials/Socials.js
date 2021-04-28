@@ -31,7 +31,7 @@ const socials = [
     },
     {
       name: "Twitter",
-      src: "https://twitter.com/home",
+      src: "https://twitter.com/ash_bergs",
       alt: "Twitter profile",
       icon: twitterIcon
     },
